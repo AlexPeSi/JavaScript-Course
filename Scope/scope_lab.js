@@ -30,8 +30,37 @@ function show(){
 show();
 
 // Fucntion block scope
-console.log(`functionVar: ${functionVar}`);
-console.log(`functionLet: ${functionLet}`);
-console.log(`functionConst: ${functionConst}`);
+// console.log(`functionVar: ${functionVar}`);
+// console.log(`functionLet: ${functionLet}`);
+// console.log(`functionConst: ${functionConst}`);
+
+// Practice time!
+{
+    var bv = "blockvar";
+    let bl = "blocklet";
+    const bc = "blockconst";
+    console.log(`printing all -- \n 
+    block variable: ${bv} \n
+    block let: ${bl} \n
+    block constant: ${bc}`);
+
+    bv = "blockvar-updated";
+    bl = "blocklet-updated";
+    // bc = "blockconst-updated";
+
+    console.log(`printing all -- \n
+    block variable: ${bv} \n
+    block let: ${bl} \n
+    block constant: ${bc}`);
+}
+
+    bv = "blockvar-updated-outside";
+    bl = "blocklet-this is a new one actually";
+    bc = "blockconst-this is also a new one";
+
+    console.log(`printing all -- \n
+    block variable: ${bv} \n
+    block let: ${bl} \n
+    block constant: ${bc}`);
 
 
