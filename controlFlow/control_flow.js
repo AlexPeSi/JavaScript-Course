@@ -47,3 +47,10 @@ switch (userType) {
 }
 
 console.log(`User Category: ${userCategory}`);
+
+let isAuthenticated = true;
+
+// ternary operator test
+let authenticationStatus = isAuthenticated? "Authenticated" : "Not Authenticated";
+
+console.log(`Authentication Status: ${authenticationStatus}`);
