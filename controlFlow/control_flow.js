@@ -54,3 +54,23 @@ let isAuthenticated = true;
 let authenticationStatus = isAuthenticated? "Authenticated" : "Not Authenticated";
 
 console.log(`Authentication Status: ${authenticationStatus}`);
+
+// practice test!
+let usrType = "employee";
+let dietaryAuth = "";
+
+switch (usrType){
+    case "employee":
+        dietaryAuth = "Access to dietary services granted.";
+        break;
+    case "enrolled member":
+        dietaryAuth = "Access to dietary services and one-on-one dietician consultations granted";
+        break;
+    case "subscriber":
+        dietaryAuth = "Partial access to dietary services granted.";
+        break;
+    default:
+        dietaryAuth = "You must subscribe or enroll for access to dietary services.";
+}
+
+console.log(`Access to dietary services: ${dietaryAuth}`);
